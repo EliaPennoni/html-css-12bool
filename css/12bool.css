@@ -14,6 +14,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+[class*="my-col"] {
+   flex : 0 0 auto 
+}
+
+
+.my-col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    display: flex;
+
+}
 
 .my-col-1{
     width:calc((100% / 12) * 1) ;
@@ -67,49 +79,49 @@
 }
 /* offset */
 .my-col-offset-1{
-    margin:calc((100% / 12) * 1) ;
+    margin-left:calc((100% / 12) * 1) ;
    
 }
 .my-col-offset-2{
-    margin:calc((100% / 12) * 2) ;
+    margin-left:calc((100% / 12) * 2) ;
    
 }
 .my-col-offset-3{
-    margin:calc((100% / 12) * 3) ;
+    margin-left:calc((100% / 12) * 3) ;
    
 }
 .my-col-offset-4{
-    margin:calc((100% / 12) * 4) ;
+    margin-left:calc((100% / 12) * 4) ;
    
 }
 
 .my-col-offset-5{
-    margin:calc((100% / 12) * 5) ;
+    margin-left:calc((100% / 12) * 5) ;
    
 }
 .my-col-offset-6{
-    margin:calc((100% / 12) * 6) ;
+    margin-left:calc((100% / 12) * 6) ;
    
 }
 .my-col-offset-7{
-    margin:calc((100% / 12) * 7) ;
+    margin-left:calc((100% / 12) * 7) ;
    
 }
 .my-col-offset-8{
-    margin:calc((100% / 12) * 8) ;
+    margin-left:calc((100% / 12) * 8) ;
    
 }
 .my-col-offset-9{
-    margin:calc((100% / 12) * 9) ;
+    margin-left:calc((100% / 12) * 9) ;
    
 }
 
 .my-col-offset-10{
-    margin:calc((100% / 12) * 10) ;
+    margin-left:calc((100% / 12) * 10) ;
    
 }
 .my-col-offset-11{
-    margin:calc((100% / 12) * 11) ;
+    margin-left:calc((100% / 12) * 11) ;
    
 }
 .my-col-offset-12{
@@ -124,17 +136,9 @@
     border: 1px solid white;
     height: 50px;
 }
-.box-nested {
-    background-color: green;
-    border: 1px solid #006CFA;
+.my-row .my-row .box {
+    background-color: #00E165;
+    border-color: #006CFA;
+    padding: 10px;
+}
    
-    
-}
-.centered-row {
-    width: 90%; 
-    height: 90%;
-    margin: 0 auto; 
-    align-items: center; 
-    justify-content: space-around; 
-    display: flex;
-}
